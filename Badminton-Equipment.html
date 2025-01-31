@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="sports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="category_selected.css">
+    <link rel="stylesheet" href="equipment.css">
+    <style>
+             @media (max-width:500px) {
+                .over {
+                height: 200px;
+                width: 400px;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                overflow-y: scroll;
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+
+
+            }
+
+            .image {
+
+                float: left;
+                height: 0px;
+                width: 0%;
+                margin-top: 20px;
+                margin-left: 10px;
+
+
+            }
+
+            img {
+                border-radius: 10px;
+                height: 100px;
+                width: 100px;
+
+            }
+
+          
+
+            .para {
+
+                float: right;
+                height: 0px;
+                width: 80%;
+                color: white;
+                text-align: justify;
+                padding: 0px;
+                padding-left: 35px;
+                margin-left: 80px;
+            }
+
+            .heading {
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            .card_span {
+      
+                background: transparent;
+                z-index: -1;
+               
+            }
+
+            .over:hover .card_span {
+                height: 00px;
+                border-bottom-left-radius: 0%;
+                width: 1100px;
+            }
+            }
+    </style>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="Home.html" class="tit">SportX</a>
+            <div class="nav-links">
+            <i class="fa-solid fa-bars" onclick="menuopen()" id="open_bar"></i> 
+
+            </div>
+        </nav>
+    </section>
+
+
+     <div class="box">
+        <i class="fa-solid fa-circle-xmark" onclick="menuhide()" id="cancle_mark"></i>
+
+        <div class="style">
+            <div class="inside_style"></div>
+        </div>
+        <ul class="menu_list">
+            <a href="Home.html"><li>Home</li></a>
+            <a href="sports.html"><li>Sports/Games</li></a>
+            <a href="Athletics.html"><li>Athletics</li></a>
+            <a href="TodayTrending.html"><li>Today Trending</li></a>
+            <a href="Home.html#Popular"></a><li>Popular</li>
+            <a href="Schedule.html"><li>Schedules</li></a>
+            <a href="Entry_page.html"><li class="rgukt_row">RguktBuzz</li></a>
+
+
+        </ul>
+       
+       
+
+          
+
+
+    </div>
+
+    <section  onclick="menuhide()" class="bottom_section">
+
+        <div class="menu_list_navigator">
+            <ul class="name_of_category">
+                <a href="#">   <li>Badminton</li></a>
+            </ul>
+            <ul class="list_of_items">
+                <a href="Badminton-History.html"><li>History</li></a>
+                <a href="Badminton-Rules.html"><li>Rules</li></a>
+                <a href="Badminton-LeadingLights.html"><li>Leading lights</li></a> 
+                <a href="Badminton-Equipment.html"><li style="color: rgb(72, 192, 72);">Equipment</li></a>
+                <a href="Badminton-Academies.html"><li>Academies</li></a>
+            </ul>
+        </div>
+
+       
+        <center>
+            <div class="over">
+                <div class="image">
+                    <img src="rackets.jpg" width="250px" height="250px">
+
+                </div>
+                <div class="para">
+                    <p> <span class="heading"> BADMINTON RACKETS<br></span>
+                        Modern Badminton Rackets are light in weight and don’t weigh more than 100 grams.
+                        The frame of the Racket can be made of common metals like steel or aluminium.
+                         Sometimes rackets are made of alloys, tough carbon fiber, ceramic, or boron. 
+                         Its length does not exceed 680mm and width does not exceed 230 mm.</p>
+
+                </div>
+                <span class="card_span"></span>
+            </div>
+        </center>
+        <center>
+            <div class="over">
+                <div class="image">
+                    <img src="cock.jpeg" width="250px" height="250px">
+
+                </div>
+                <div class="para">
+                    <p> <span class="heading">COCK<br></span>
+
+                        Sixteen feathers fixed in a cork base enveloped in a thin 
+                        leather sheet make a shuttlecock. Interestingly, the best Badminton 
+                        Shuttlecocks are made from feathers from the wing of a goose. The 
+                        shuttle weighs between 4.74 to 5.50 grams.
+                    </p>
+
+                </div>
+                <span class="card_span"></span>
+            </div>
+        </center>
+        <center>
+            <div class="over">
+                <div class="image">
+                    <img src="badshoes.jpg" width="250px" height="250px">
+
+                </div>
+                <div class="para">
+                    <p> <span class="heading">SHOES <br></span>
+
+                        A good pair of Badminton Shoes provide good grip, cushioning 
+                        and some flexibility at the forefoot.</p>
+
+                </div>
+                <span class="card_span"></span>
+            </div>
+        </center>
+        <center>
+            <div class="over">
+                <div class="image">
+                    <img src="cloth.jpg" width="250px" height="250px">
+
+                </div>
+                <div class="para">
+                    <p> <span class="heading">BADMINTON CLOTHES<br></span>
+
+
+                        Comfortable T-shirts and shorts, that don’t hinder your movement are ideal to play Badminton.
+                        A cotton round-neck or a collar t-shirts with a pair of light shorts are usually preferred.</p>
+
+                </div>
+                <span class="card_span"></span>
+            </div>
+        </center>
+        <center>
+            <div class="over">
+                <div class="image">
+                    <img src="badsocks.webp" width="250px" height="250px">
+
+                </div>
+                <div class="para">
+                    <p> <span class="heading">SOCKS<br></span>
+
+                        Wear a pair of thick cotton socks as they help to absorb sweat. 
+                        They also prevent your feet from slipping inside your shoes.
+                         Avoid wearing Nylon socks that don’t absorb sweat.
+                    </p>
+
+                </div>
+                <span class="card_span"></span>
+            </div>
+        </center>
+        <center>
+            <div class="over">
+                <div class="image">
+                    <img src="grip.jpg" width="250px" height="250px">
+
+                </div>
+                <div class="para">
+                    <p> <span class="heading">GRIP<br></span>
+                        A grip made of cloth or synthetic fiber absorbs sweat and provides you a drier feel.</p>
+
+                </div>
+                <span class="card_span"></span>
+            </div>
+        </center>
+        <center>
+            <div class="over">
+                <div class="image">
+                    <img src="headband.jpg" width="250px" height="250px">
+
+                </div>
+                <div class="para">
+                    <p> <span class="heading">HEAD BAND<br></span>
+
+                        Wear a Head Band if you wear spectacles. It prevents your 
+            lenses from getting wet and also stops the sweat and hair 
+            from getting into your eyes while playing.
+                    </p>
+
+                </div>
+                <span class="card_span"></span>
+            </div>
+        </center>
+
+</section>
+
+
+
+
+
+
+
+
+<script src="home.js"></script>
+</body>
+</html>

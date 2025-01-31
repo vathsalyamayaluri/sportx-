@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="category_selected.css">
+    <style>
+       
+        .row_section{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .card1{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            margin-top: 100px;
+            background: #e85949;
+            position: relative;
+            transition: 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image_to_hover,.kl_image_to_hover{
+            position:absolute;
+            right: 20%;
+            bottom: 0%;
+            height: 80px;
+            transition: 0.5s;
+            height: 280px;
+        }
+        .kl_image_to_hover{
+            right: 5%;
+        }
+        .card1:hover{
+            border-radius: 20px;
+            height: 300px;
+            width: 500px;
+        }
+        .card1:hover .image_to_hover{
+            scale: 1.4;
+            transform: translateY(-40px) translateX(-120px);
+        }
+        .card1 .text{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            visibility: hidden;
+        }
+        .card1 .content_heading{
+            font-size: 30px;
+            color: #234;
+            font-weight: 700;
+        }
+        .card1 .content{
+            color: white;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+
+        }
+        .card1:hover .text{
+            transform: translateX(110px);
+            visibility: visible;
+            transition: 0.5s;
+        
+        }
+        .Learn_more_button{
+            height: 30px;
+            width: 100px;
+            margin-top: 40px;
+            background-color: #234;
+            color: white;
+            border:1px solid white;
+        }
+        .Learn_more_button:hover{
+            color: black;
+            background-color: white;
+            border: 2px solid #234;
+            font-weight: 600;
+            transition: 0.5s;
+        }
+        .dhoni_image_to_hover{
+        height: 380px;
+        position:absolute;
+        top: -67px;
+        right: -50%;
+        transition: 0.5s;
+        }
+        .card1:hover .dhoni_image_to_hover{
+            scale: 1.2;
+            transform: translateY(-24px) translateX(-270px);
+        }
+        .card1:hover .kl_image_to_hover{
+            scale: 1.4;
+            transform: translateY(-40px) translateX(-150px);
+        }
+        .name_of_player{
+            position: absolute;
+            bottom: -10%;
+        }
+        .image_to_hover_saina{
+            position:absolute;
+            right: 20%;
+            bottom: 5%;
+            height: 90px;
+            transition: 0.5s;
+            height: 280px;
+            scale: 1.1;
+        }
+        .card1:hover .image_to_hover_saina{
+            scale: 1.3;
+            transform: translateY(-20px) translateX(-150px);
+        }
+
+
+
+        @media (max-width:500px) {
+        .row_section{
+            display: block;
+            justify-content: center;
+        }
+        .card1{
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            margin-top: 80px;
+        }
+        .image_to_hover{
+            position:relative;
+            right: 0%;
+            bottom: 12%;
+            height: 80px;
+            transition: 0.5s;
+            height: 220px;
+            width: 160px;
+        }
+        .card1:hover{
+            border-radius: 20px;
+            height: 200px;
+            width: 400px;
+        }
+        .card1:hover .image_to_hover{
+            scale: 1.4;
+            transform: translateY(-30px) translateX(-70px);
+        }
+        .card1 .text{
+            height: 100px;
+            width: 200px;
+            margin-right: 50px;
+            text-align: center;
+            visibility: hidden;
+        }
+        .card1 .content_heading{
+            font-size: 20px;
+            
+        }
+        .card1 .content{
+            color: white;
+            font-size: 15px;
+            letter-spacing: 1px;
+
+        }
+        .card1:hover .text{
+            transform: translateX(110px);
+            visibility: visible;
+            transition: 0.5s;
+        }
+        .Learn_more_button{
+            margin-top: 20px;
+        }
+        .name_of_player{
+            font-size: 20px;
+            bottom: -15%;
+        }
+        .dhoni_image_to_hover{
+        height: 270px;
+        position:absolute;
+        top: -70px;
+        right: -65%;
+        transition: 0.5s;
+       
+        }
+        .card1:hover .dhoni_image_to_hover{
+            scale: 1.3;
+            transform: translateY(-23px) translateX(-260px);
+        }
+        .card1:hover .kl_image_to_hover{
+            scale: 1.4;
+            transform: translateY(-40px) translateX(-150px);
+        }
+       }
+    </style>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="Home.html" class="tit">SportX</a>
+            <div class="nav-links">
+            <i class="fa-solid fa-bars" onclick="menuopen()" id="open_bar"></i> 
+
+            </div>
+        </nav>
+    </section>
+
+
+     <div class="box">
+        <i class="fa-solid fa-circle-xmark" onclick="menuhide()" id="cancle_mark"></i>
+
+        <div class="style">
+            <div class="inside_style"></div>
+        </div>
+        <ul class="menu_list">
+            <a href="Home.html"><li>Home</li></a>
+            <a href="sports.html"><li>Sports/Games</li></a>
+            <a href="Athletics.html"><li>Athletics</li></a>
+            <a href="TodayTrending.html"><li>Today Trending</li></a>
+            <a href="Home.html#Popular"></a><li>Popular</li>
+            <a href="Schedule.html"><li>Schedules</li></a>
+            <a href="Entry_page.html"><li class="rgukt_row">RguktBuzz</li></a>
+
+        </ul>
+       
+       
+
+          
+
+
+    </div>
+
+    <section  onclick="menuhide()" class="bottom_section">
+
+        <div class="menu_list_navigator" >
+            <ul class="name_of_category">
+                <a href="#">   <li>Badminton</li></a>
+            </ul>
+            <ul class="list_of_items">
+                <a href="Badminton-History.html"><li >History</li></a>
+                <a href="Badminton-Rules.html"><li>Rules</li></a>
+                <a href="Badminton-LeadingLights.html"><li style="color: rgb(72, 192, 72);">Leading lights</li></a> 
+                <a href="Badminton-Equipment.html"><li>Equipment</li></a>
+                <a href="Badminton-Academies.html"><li>Academies</li></a>
+            </ul>
+        </div>
+        
+        <div class="catds_container">
+
+            <div class="row_section">
+                <div class="card1">
+                    <img src="sindhu-removebg-preview.png" alt="" class="image_to_hover" height="130px" width="200px"></a>
+                    <div class="text">
+                    <span class="content_heading">P V Sindhu</span> <br> <br>
+                    <span class="content">Past Indian football player</span> <br>
+                   <a href="p.v.sindhu.html"><button class="Learn_more_button">Learn more!</button></a> 
+                </div>
+                 <h1 class="name_of_player">P.V.sindhu</h1>
+                </div>
+              
+                <div class="card1">
+                    <img src="saina-removebg-preview.png" alt="" class="image_to_hover" height="130px" width="200px"></a>
+                    <div class="text">
+                    <span class="content_heading">Saina Nehwal</span> <br> <br>
+                    <span class="content">Past Indian football player</span> <br>
+                   <a href="saina.html"><button class="Learn_more_button">Learn more!</button></a> 
+                </div>
+                 <h1 class="name_of_player">Saina Nehwal</h1>
+    
+                </div>
+                    
+       </div>
+
+       <div class="row_section">
+        <div class="card1">
+            <img src="srikanth-removebg-preview.png" alt="" class="image_to_hover" height="130px" width="200px"></a>
+            <div class="text">
+            <span class="content_heading"> Srikanth</span> <br> <br>
+            <span class="content">Past Indian football player</span> <br>
+           <a href="srikanthkidambi.html"><button class="Learn_more_button">Learn more!</button></a> 
+        </div>
+         <h1 class="name_of_player"> Srikanth </h1>
+        </div>
+            
+</div>
+                    
+                    
+    
+    </section>
+
+
+
+
+
+
+
+
+    <script src="home.js"></script>
+
+
+</body>
+</html>

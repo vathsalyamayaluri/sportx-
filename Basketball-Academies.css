@@ -1,0 +1,46 @@
+  body {}
+
+        .card {
+            position: relative;
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            overflow: hidden;
+            border-radius: 20px;
+            display: flex;
+            transition: 0.5s;
+            margin: auto;
+            background: #234;
+            color: #fff;
+            padding: 0;
+        }
+
+        .card:hover {
+            width: 900px;
+        }
+
+        .bacademy_image {
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+            margin: 0;
+
+        }
+
+        .content {
+            margin: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            margin-top: 70px;
+
+        }
+
+        h1:hover {
+            color: #e85848;
+        }

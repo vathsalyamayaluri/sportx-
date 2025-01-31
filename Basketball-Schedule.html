@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="sports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="category_selected.css">
+    <style>
+        .inter_domestic_list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 40px;
+            font-weight: 600;
+            gap: 50px;
+        }
+        .bottom_section{
+            height: 100vh;
+            overflow: scroll;
+            scroll-behavior: smooth;
+        }
+        .type_of_cricket{
+            margin: 20px 120px;
+            font-size: 25px;
+            background-color: #234;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+ 
+
+        .firstcard3{
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 20px;
+            border:3px solid ;
+            border-top-color: #e85848;
+            border-left-color: #e85848;
+            border-right-color: #234;
+            border-bottom-color: #234;
+        }  
+       
+        .dropbtn {
+            background-color: #e85848;
+            color: white;
+            padding: 16px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #234;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        }
+
+        .dropdown-content a:hover {background-color:#e85848;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color:  rgb(72, 192, 72);}
+      
+        .badminton_table{
+            height: 40px;
+            width: 1000px;
+            border-collapse: collapse;
+            margin: 20px;
+            text-align: center;
+        }
+        .badminton_table td,th{
+            padding: 10px;
+        }
+    </style>
+</head>
+<style>
+</style>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="Home.html" class="tit">SportX</a>
+            <div class="nav-links">
+            <i class="fa-solid fa-bars" onclick="menuopen()" id="open_bar"></i> 
+
+            </div>
+        </nav>
+    </section>
+
+
+     <div class="box">
+        <i class="fa-solid fa-circle-xmark" onclick="menuhide()" id="cancle_mark"></i>
+
+        <div class="style">
+            <div class="inside_style"></div>
+        </div>
+        <ul class="menu_list">
+
+            <a href="sports.html"><li>Sports/Games</li></a>
+            <a href="Athletics.html"><li>Athletics</li></a>
+            <a href="TodayTrending.html"><li>Today Trending</li></a>
+            <li>Popular</li>
+            <a href="RB_intro_page.html"><li class="rgukt_row">RguktBuzz</li></a>
+        <div class="style2">
+            <div class="inside_style2"></div>
+        </div>
+
+        </ul>
+       
+       
+
+          
+
+
+    </div>
+
+    <section  onclick="menuhide()" class="bottom_section">
+
+        <div class="menu_list_navigator">
+            <ul class="name_of_category">
+                <a href="#">   <li>Basketball</li></a>
+            </ul>
+            <ul class="list_of_items">
+                <a href="Basketball-History.html"><li >History</li></a>
+                <a href="Basketball-Rules.html"><li>Rules</li></a>
+                <a href="Basketball-LeadingLights.html"><li>Leading lights</li></a> 
+                <a href="Basketball-Equipment.html"><li>Equipment</li></a>
+                <a href="Basketball-Schedule.html"><li style="color: rgb(72, 192, 72);">Schedule</li></a>
+                <a href="Basketball-Academies.html"><li>Academies</li></a>
+            </ul>
+        </div>
+
+    <div class="inter_domestic_list">
+    <div class="dropdown">
+        <button class="dropbtn">International</button>
+        <div class="dropdown-content">
+          <a href="#FIBA_Calender">FIBA Calender</a>
+        
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Domestic</button>
+        <div class="dropdown-content">
+          <a href="#"></a>
+        
+        </div>
+      </div>
+    </div>
+
+
+    <section id="FIBA_Calender">
+        <h1 class="type_of_cricket">FIBA Calender</h1>
+
+        <div class="schedule_cards">
+            
+            <div class="firstcard3">
+                <h1 style="margin: 30px;">October 2023</h1>
+                <table class="badminton_table" border="1">
+                    <tr>
+                    <th>Event</th>
+                    <th>Location</th>
+                    <th>Beginning</th>
+                    <th>End</th>
+                </tr>
+                <tr>
+                 <td>FIBA Europe Cup</td>
+                 <td></td>
+                 <td>02. Oct 2023</td>
+                 <td>24. Apr 2024</td>
+                </tr>
+                <tr>
+                    <td>FIBA U17 Oceania Championship</td>
+                    <td>Port Moresby (PNG)</td>
+                    <td>02. Oct 2023</td>
+                    <td>07. Oct 2023</td>
+                </tr>
+                <tr>
+                    <td>FIBA U17 Women's Oceania Championship</td>
+                    <td>Port Moresby (PNG)</td>
+                    <td>02. Oct 2023</td>
+                    <td>07. Oct 2023</td>
+                </tr>
+                <tr>
+                    <td>Africa Champions Clubs ROAD TO B.A.L. 2024</td>
+                    <td>Gaborone (BOT), Yaoundé (CMR), Abidjan (CIV),<br>
+                        Antananarivo (MAD), Johannesburg (RSA),<br>
+                         Dar es Salaam (TAN)</td>
+                    <td>03. Oct 2023</td>
+                    <td>19. Nov 2023</td>
+                </tr>
+                <tr>
+                    <td>Draw for the FIBA Women's Olympic Qualifying Tournament</td>
+                    <td></td>
+                    <td>05. Oct 2023</td>
+                    <td>05. Oct 2023</td>
+                </tr>
+                <tr>
+                    <td>Expo 2023 Doha Challenger 2023</td>
+                    <td>Doha (QAT)</td>
+                    <td>10. Oct 2023</td>
+                    <td>11. Oct 2023</td>
+                </tr>
+                <tr>
+                    <td>Liga Sudamericana de Baloncesto FIBA</td>
+                    <td>Obera (ARG), Barranquilla (COL), Montevideo (URU)</td>
+                    <td>13. Oct 2023</td>
+                    <td>03. Dec 2023</td>
+                </tr>
+                <tr>
+                    <td>Turismo San Juan Challenger 2023</td>
+                    <td>San Juan (PUR)</td>
+                    <td>14. Oct 2023</td>
+                    <td>15. Oct 2023</td>
+                </tr>
+                <tr>
+                    <td>WT Shanghai 2023</td>
+                    <td> 	Shanghai (CHN)</td>
+                    <td> 	14. Oct 2023</td>
+                    <td>15. Oct 2023</td>
+                </tr>
+                <tr>
+                    <td>EXPO 2023 Al Bidda Park Challenger 2023</td>
+                    <td>Doha (QAT)</td>
+                    <td>17. Oct 2023</td>
+                    <td>18. Oct 2023</td>
+                </tr>
+                <tr>
+                    <td>WT Chengdu 2023</td>
+                    <td>Chengdu Shi, Sichuan (CHN)</td>
+                    <td>21. Oct 2023</td>
+                    <td>22. Oct 2023</td>
+                </tr>
+                <tr>
+                    <td>Taipei Challenger 2023</td>
+                    <td>Taipei, Taipei (TPE)</td>
+                    <td>28. Oct 2023</td>
+                    <td>29. Oct 2023</td>
+                </tr>
+                <tr>
+                    <td>WT Abu Dhabi 2023</td>
+                    <td>Abu Dhabi, Abu Dhabi Emirate (UAE)</td>
+                    <td>28. Oct 2023</td>
+                    <td>29. Oct 2023</td>
+                </tr>
+            </table>
+
+            <h1 style="margin: 30px;">November 2023</h1>
+                <table class="badminton_table" border="1">
+                    <tr>
+                    <th>Event</th>
+                    <th>Location</th>
+                    <th>Beginning</th>
+                    <th>End</th>
+                </tr>
+                <tr>
+                    <td>Goa Challenger 2023</td>
+                    <td>Goa, Goa (IND)</td>
+                    <td>01. Nov 2023</td>
+                    <td>02. Nov 2023</td>
+                </tr>
+                <tr>
+                    <td>Neom Challenger 2023</td>
+                    <td>Neom (KSA)</td>
+                    <td>02. Nov 2023</td>
+                    <td>04. Nov 2023</td>
+                </tr>
+                <tr>
+                    <td>WT Wuxi 2023</td>
+                    <td>Wuxi, Jiangsu (CHN)</td>
+                    <td>04. Nov 2023</td>
+                    <td>05. Nov 2023</td>
+                </tr>
+                <tr>
+                    <td>FIBA Women&#39;s EuroBasket Qualifiers</td>
+                    <td></td>
+                    <td>05. Nov 2023</td>
+                    <td>10. Feb 2025</td>
+                </tr>
+                <tr>
+                    <td>FIBA Women&#39;s Pre-Olympic Qualifying Tournaments</td>
+                    <td></td>
+                    <td>05. Nov 2023</td>
+                    <td>13. Nov 2023</td>
+                </tr>
+                <tr>
+                    <td>International Window for Women&#39;s Basketball</td>
+                    <td></td>
+                    <td>05. Nov 2023</td>
+                    <td>13. Nov 2023</td>
+                </tr>
+                <tr>
+                    <td>FIBA Women's Olympic Pre-Qualifying Tournament Colombia</td>
+                    <td></td>
+                    <td>09. Nov 2023</td>
+                    <td>12. Nov 2023</td>
+                </tr>
+                <tr>
+                    <td>South American U17 Championship</td>
+                    <td>Valledupar (COL)</td>
+                    <td>16. Nov 2023</td>
+                    <td>20. Nov 2023</td>
+                </tr>
+                <tr>
+                    <td>WT Manama 2023</td>
+                    <td>Manama (BRN)</td>
+                    <td>16. Nov 2023</td>
+                    <td>17. Nov 2023</td>
+                </tr>
+                <tr>
+                    <td>Pacific Games: Tournament for Men</td>
+                    <td>Honiara (SOL)</td>
+                    <td>17. Nov 2023</td>
+                    <td>25. Nov 2023</td>
+                </tr>
+                <tr>
+                    <td>Pacific Games: Tournament for Women</td>
+                    <td>Honiara (SOL)</td>
+                    <td>17. Nov 2023</td>
+                    <td>25. Dec 2023</td>
+                </tr>
+                <tr>
+                    <td>International Window for Men&#39;s Basketball</td>
+                    <td></td>
+                    <td class="align_center">20. Nov 2023</td>
+                    <td class="align_center">28. Nov 2023</td>
+                </tr>
+                <tr>
+                    <td>WT Hong Kong 2023</td>
+                    <td>Hong Kong (HKG)</td>
+                    <td class="align_center">25. Nov 2023</td>
+                    <td class="align_center">26. Nov 2023</td>
+                </tr>
+                <tr>
+                    <td>South American U17 Women&#39;s Championship</td>
+                    <td>Bucaramanga (COL)</td>
+                    <td class="align_center">26. Nov 2023</td>
+                    <td class="align_center">02. Dec 2023</td>
+                </tr>
+                <tr>
+                    <td>FIBA 3x3 AmeriCup 2023</td>
+                    <td>San Juan (PUR)</td>
+                    <td class="align_center">30. Nov 2023</td>
+                    <td class="align_center">03. Dec 2023</td>
+                </tr>
+                <tr>
+                    <td>FIBA 3x3 U17 Africa Cup 2023</td>
+                    <td>Cairo, Al Qahirah (EGY)</td>
+                    <td class="align_center">30. Nov 2023</td>
+                    <td class="align_center">30. Nov 2023</td>
+                </tr>
+                </table>
+            </div>
+            </div>
+            </section>
+
+
+          
+
+  
+
+       </section>
+       <section id="domestic"></section>
+
+    </section>
+
+
+
+
+
+
+
+
+    <script src="home.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="sports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="category_selected.css">
+    <style>
+        .inter_domestic_list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 40px;
+            font-weight: 600;
+            gap: 50px;
+        }
+        .bottom_section{
+            height: 100vh;
+            overflow: scroll;
+            scroll-behavior: smooth;
+        }
+        .type_of_cricket{
+            margin: 20px 120px;
+            font-size: 25px;
+            background-color: #234;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+ 
+
+        .firstcard{
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 20px;
+            border:3px solid ;
+            border-top-color: #e85848;
+            border-left-color: #e85848;
+            border-right-color: #234;
+            border-bottom-color: #234;
+        }  
+       
+        .dropbtn {
+            background-color: #e85848;
+            color: white;
+            padding: 16px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #234;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        }
+
+        .dropdown-content a:hover {background-color:#e85848;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color:  rgb(72, 192, 72);}
+      
+        .badminton_table{
+            height: 40px;
+            width: 1000px;
+            border-collapse: collapse;
+            margin: 20px;
+            text-align: center;
+        }
+        .badminton_table td,th{
+            padding: 10px;
+        }
+    </style>
+</head>
+<style>
+</style>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="Home.html" class="tit">SportX</a>
+            <div class="nav-links">
+            <i class="fa-solid fa-bars" onclick="menuopen()" id="open_bar"></i> 
+
+            </div>
+        </nav>
+    </section>
+
+
+     <div class="box">
+        <i class="fa-solid fa-circle-xmark" onclick="menuhide()" id="cancle_mark"></i>
+
+        <div class="style">
+            <div class="inside_style"></div>
+        </div>
+        <ul class="menu_list">
+
+            <a href="sports.html"><li>Sports/Games</li></a>
+            <a href="Athletics.html"><li>Athletics</li></a>
+            <a href="TodayTrending.html"><li>Today Trending</li></a>
+            <li>Popular</li>
+            <a href="RB_intro_page.html"><li class="rgukt_row">RguktBuzz</li></a>
+        <div class="style2">
+            <div class="inside_style2"></div>
+        </div>
+
+        </ul>
+       
+       
+
+          
+
+
+    </div>
+
+    <section  onclick="menuhide()" class="bottom_section">
+
+        <div class="menu_list_navigator">
+            <ul class="name_of_category">
+                <a href="#">   <li>Badminton</li></a>
+            </ul>
+            <ul class="list_of_items">
+                <a href="Badminton-History.html"><li >History</li></a>
+                <a href="Badminton-Rules.html"><li>Rules</li></a>
+                <a href="Badminton-LeadingLights.html"><li>Leading lights</li></a> 
+                <a href="Badminton-Equipment.html"><li>Equipment</li></a>
+                <a href="Badminton-Schedule.html"><li style="color: rgb(72, 192, 72);">Schedule</li></a>
+                <a href="Badminton-Academies.html"><li>Academies</li></a>
+            </ul>
+        </div>
+       <!-- <div class="inter_domestic_list">
+
+        <ul class="inter_domestic">
+           <a href="#international" > <li>International </li></a>
+        
+
+          <a href="#domestic">  <li>Domestic</li></a>
+        </ul>
+    </div>-->
+    <div class="inter_domestic_list">
+    <div class="dropdown">
+        <button class="dropbtn">International</button>
+        <div class="dropdown-content">
+          <a href="#worldcup">BWF Tour</a>
+          <a href="#"></a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Domestic</button>
+        <div class="dropdown-content">
+          <a href="#">IPL</a>
+          <a href="#">Ranji Trophy</a>
+          <a href="#"></a>
+        </div>
+      </div>
+    </div>
+       <section id="worldcup">
+        <h1 class="type_of_cricket">BWF world championships</h1>
+
+        <div class="schedule_cards">
+            
+            <div class="firstcard">
+                <table class="badminton_table" border="1">
+                    <tr>
+                    <th>Dates</th>
+                    <th>Tournament</th>
+                    <th>Location</th>
+                    <th>BWF Level</th>
+                </tr>
+                <tr>
+                    <td>Jan 10 - Jan 15	</td>
+                    <td>Malaysia Open</td>
+                    <td>Kuala Lumpur</td>
+                    <td>Super 1000</td>
+                </tr>
+                <tr>
+                    <td>Jan 12 - Jan 15</td>
+                    <td>	Yonex Estonian International	</td>
+                    <td>Tallinn</td>
+                    <td>Int Series</td>
+                </tr>
+                <tr>
+                    <td>Jan 17 - Jan 22</td>
+                    <td>Yonex Sunrise India Open</td>
+                    <td>	New Delhi</td>
+                    <td>Super 750</td>
+                </tr>
+                <tr>
+                    <td>Jan 24 - Jan 29</td>
+                    <td>Indonesia Masters</td>
+                    <td>Jakarta</td>
+                    <td>Super 500</td>
+                </tr>
+                <tr>
+                    <td>Jan 26 - Jan 29</td>
+                    <td>Iceland International</td>
+                    <td>Reykjavik</td>
+                    <td>Future Series</td>
+                </tr>
+                 <tr>
+                    <td>Jan 27 - Jan 29	</td>
+                    <td>Swedish Junior</td>
+                    <td>	Uppsala</td>
+                    <td>Int Series</td>
+                </tr> 
+                <tr>
+                    <td>Jan 31 - Feb 04</td>
+                    <td>Iran Fair International Challenge</td>
+                    <td>Tehran Or Tabriz</td>
+                    <td>International Challenge</td>
+                </tr>
+                 <tr>
+                    <td>Jan 31 - Feb 05	</td>
+                    <td>Thailand Masters</td>
+                    <td>Bangkok	</td>
+                    <td>Super 300</td>
+                </tr>
+                 <tr>
+                    <td>Feb 9 - Feb 12</td>
+                    <td>Hungarian Junior Championships</td>
+                    <td>Pécs</td>
+                    <td>Int Series</td>
+                </tr> 
+                <tr>
+                    <td>Feb 10 - Feb 12</td>
+                    <td>Victor Oceania Junior Mixed <br> Team Championships</td>
+                    <td>North Shore</td>
+                    <td>Continental Team Championships</td>
+                </tr>
+                 <tr>
+                    <td>Feb 13 - Feb 16</td>
+                    <td>All Africa Mixed Team Championships</td>
+                    <td>Johannesburg</td>
+                    <td>Continental Team Championships</td>
+                </tr> <tr>
+                    <td>Feb 14 – Feb 18</td>
+                    <td>European Mixed Team Championships</td>
+                    <td>Aire-Sur-La-Lys	</td>
+                    <td>Continental Team Championships</td>
+                </tr> <tr>
+                    <td>Feb 14 – Feb 19</td>
+                    <td>Victor Oceania Championships</td>
+                    <td>North Shore</td>
+                    <td>Continental Individual Championships</td>
+                </tr> <tr>
+                    <td>Feb 13 – Feb 19</td>
+                    <td>Victor Oceania Junior Championships</td>
+                    <td>North Shore</td>
+                    <td>Continental Individual Championships</td>
+                </tr>
+                <tr>
+                    <td>Feb 17 – Feb 19</td>
+                    <td>All Africa Individual Championships</td>
+                    <td>Johannesburg</td>
+                    <td>Continental Individual Championships</td>
+                </tr>
+                <tr>
+                    <td>Feb 17 – Feb 19</td>
+                    <td>Victor Oceania Mixed Team Championships</td>
+                    <td>North Shore</td>
+                    <td>Continental Team Championships</td>
+                </tr>
+                <tr>
+                    <td>Feb 23 – Feb 26</td>
+                    <td>Uganda International</td>
+                    <td>Kampala</td>
+                    <td>International Challenge</td>
+                </tr>
+                <tr>
+                    <td>Feb 24 – Feb 26</td>
+                    <td>Italian Junior</td>
+                    <td>Milano</td>
+                    <td>International Challenge</td>
+                </tr>
+                <tr>
+                    <td>Feb 27 – Mar 01</td>
+                    <td>Uganda Junior International</td>
+                    <td>Kampala</td>
+                    <td>Future Series</td>
+                </tr>
+                <tr>
+                    <td>Feb 28 – Mar 05</td>
+                    <td>Toyota International Challenge</td>
+                    <td>Bangkok</td>
+                    <td>International Challenge</td>
+                </tr>
+                </table>
+          
+            </div>
+
+  
+
+       </section>
+       <section id="domestic"></section>
+
+    </section>
+
+
+
+
+
+
+
+
+    <script src="home.js"></script>
+
+
+</body>
+</html>
